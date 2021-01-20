@@ -9,15 +9,6 @@
       </p>
       <Form @submit="onSubmit" id="application-form">
         <FormGroup title="1. ФИО">
-          <input type="hidden" name="name">
-          <select class="select" name="id_country" style="display: none">
-            <option value="RU">Россия</option>
-            <option value="UA">Украина</option>
-            <option value="KZ">Казахстан</option>
-            <option value="BY">Белоруссия</option>
-            <option value="00">Другое</option>
-          </select>
-
           <ui-input
               placeholder="Фамилия"
               name="staff_f"
@@ -256,21 +247,9 @@ export default {
       document.body.classList.toggle('modal-open');
     },
     onSubmit() {
-      const {fields, $axios, onValidation} = this;
-      const data = {
-        api_key: 'bfrFde43Jp9Axc120MnQuTT',
-        ip_address: '127.0.0.1',
-      };
-
-      let query = this.$route.query;
-      query['click_id'] ? data['click_id'] = query['click_id'] : ''
-
-      Object.keys(fields).forEach(key => {
-        data[key] = fields[key]
-      })
 
       this.togglePopup();
-      $axios.post('https://anketa.prime-call.ru/land.php', data)
+      $axios.post('', data)
           .then(result => {
             this.popup = {
               title: 'Спасибо!',
