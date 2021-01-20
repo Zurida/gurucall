@@ -1,0 +1,126 @@
+html {
+  box-sizing border-box
+  font-size $font-size-default
+}
+
+html, body {
+  height 100%
+  margin 0
+  padding 0
+}
+
+*, *:before, *:after {
+  box-sizing inherit
+}
+
+body {
+  color $color-default
+  font-size inherit
+  line-height $font-size-default * 2
+  font-family $font-default
+  -moz-osx-font-smoothing grayscale
+  -webkit-font-smoothing antialiased
+  -ms-text-size-adjust 100%
+  -webkit-text-size-adjust 100%
+
+  &.modal-open {
+    overflow hidden
+  }
+}
+
+a {
+  color inherit
+  text-decoration none
+
+  &[disabled] {
+    pointer-events none
+    opacity 0.7
+  }
+}
+
+b, strong {
+  font-family $font-bold
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin 0
+  padding 0
+}
+
+p {
+  margin 0
+  padding 0
+}
+
+img {
+  max-width: 100%
+}
+
+ul {
+  padding 0
+  margin 0
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.icon {
+  display inline-block
+  width 100%
+  height @width
+
+  & svg {
+    width @width
+    height @width
+  }
+}
+
+#__nuxt, #__layout {
+  height 100%
+}
+
+.error-message {
+  color $color-error
+  font-size 12px
+  line-height 24px
+  font-weight 700
+  margin-top -7px
+  margin-bottom 3px
+}
+
+.VueCarousel {
+
+  .VueCarousel-dot {
+    width 8px !important
+    height 8px !important
+    background-color #E0E0E0
+    margin 0 4px !important
+    padding 0 !important
+    vertical-align middle
+    outline none !important
+
+    &--active {
+      width 12px !important
+      height 12px !important
+      background-color $color-primary!important
+    }
+  }
+
+}

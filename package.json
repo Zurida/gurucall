@@ -1,0 +1,37 @@
+{
+  "name": "my-app",
+  "scripts": {
+    "dev": "nuxt",
+    "prod": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "5.4.1",
+    "animate.css": "3.7.0",
+    "axios": "^0.18.1",
+    "css-loader": "2.1.1",
+    "debounce": "^1.2.0",
+    "doLink": "^0.2.0",
+    "jquery": "^3.5.1",
+    "normalize.css": "8.0.1",
+    "nuxt": "2.6.3",
+    "path": "0.12.7",
+    "portal-vue": "^2.1.7",
+    "poststylus": "1.0.0",
+    "querystring": "0.2.0",
+    "striptags": "3.1.1",
+    "stylus": "0.54.5",
+    "stylus-loader": "3.0.2",
+    "url-loader": "1.1.2",
+    "v-wow": "git+https://github.com/guisoares2011/vue-wow.git",
+    "vue": "^2.6.10",
+    "vue-axios": "^2.1.5",
+    "vue-carousel": "^0.18.0",
+    "vue-loader": "15.7.0",
+    "vue-scrollactive": "^0.9.3",
+    "vue-scrollto": "^2.17.1",
+    "vue-style-loader": "4.1.2",
+    "vue-sweetalert2": "^3.0.3",
+    "vuex": "^3.1.2",
+    "webpack": "4.31.0"
+  }
+}
